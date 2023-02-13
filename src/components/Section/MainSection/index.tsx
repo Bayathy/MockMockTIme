@@ -2,7 +2,7 @@ import type { FC } from "react";
 
 import tw from "twin.macro";
 
-import { Card } from "../Card";
+import { Card } from "../../Card";
 
 export const MainSection: FC = () => {
   return (
