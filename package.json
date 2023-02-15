@@ -16,9 +16,11 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@next/font": "13.1.6",
+    "@tabler/icons-react": "^2.3.0",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "swr": "^2.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -33,9 +35,10 @@
     "babel-loader": "^9.1.2",
     "babel-plugin-macros": "^3.1.0",
     "eslint": "8.33.0",
-    "eslint-config-bayathy": "^1.0.31",
+    "eslint-config-bayathy": "^1.0.33",
     "eslint-plugin-tailwindcss": "^3.8.3",
     "husky": "^8.0.3",
+    "msw": "^1.0.1",
     "prettier": "^2.8.4",
     "tailwindcss": "^3.2.6",
     "twin.macro": "^3.1.0",
