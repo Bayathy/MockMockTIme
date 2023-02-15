@@ -11,6 +11,7 @@
     "every weekend"
   ],
   "dependencyDashboard": true,
+  "baseBranches": ["dev"],
   "npm": {
     "extends": [
       ":noUnscheduledUpdates",

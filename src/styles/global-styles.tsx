@@ -1,18 +1,22 @@
 import type { FC } from "react";
-import { Global } from "@emotion/react";
-import tw, { css, theme, GlobalStyles as BaseStyles } from "twin.macro";
 
-const customStyles = css({
-  body: {
-    WebkitTapHighlightColor: theme`colors.purple.500`,
-    ...tw`antialiased`,
-  },
+import { Noto_Sans_JP } from "@next/font/google";
+import { GlobalStyles as BaseStyles } from "twin.macro";
+
+const notoFont = Noto_Sans_JP({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  display: "swap",
 });
 
 const GlobalStyles: FC = () => (
   <>
     <BaseStyles />
-    <Global styles={customStyles} />
+    <style jsx global suppressHydrationWarning>{`
+      html {
+        font-family: ${notoFont.style.fontFamily};
+      }
+    `}</style>
   </>
 );
 

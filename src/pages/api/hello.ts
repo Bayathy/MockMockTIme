@@ -6,6 +6,7 @@ type Data = {
 };
 
 export default function handler(
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {

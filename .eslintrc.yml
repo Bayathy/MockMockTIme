@@ -20,3 +20,5 @@ parserOptions:
 rules:
   "import/no-unresolved": off
   "unicorn/prevent-abbreviations": off
+  "react/no-unknown-property": off
+  "unicorn/filename-case": off
