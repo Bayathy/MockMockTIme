@@ -1,11 +1,23 @@
+import { useEffect } from "react";
+
 import Head from "next/head";
+import { useRecoilValue, useSetRecoilState } from "recoil";
 
 import { Layout } from "../components/Layout";
 import { MainSection } from "../components/Section/MainSection";
+import { cardListState } from "../store/cardListState";
+import { useCardList } from "../utils/hooks/useCardList";
 
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
+  const cardList = useRecoilValue(cardListState);
+  const [data] = useCardList();
+  const setCardList = useSetRecoilState(cardListState);
+
+  useEffect(() => {
+    setCardList(data);
+  }, [data]);
   return (
     <>
       <Head>
@@ -14,7 +26,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Layout>
-        <MainSection />
+        <MainSection cardList={cardList} />
       </Layout>
     </>
   );
