@@ -11,11 +11,11 @@ export type TabsProps = {
 };
 
 export const TabBar: FC<TabsProps> = ({ items }) => (
-  <nav css={tw`sticky w-48`}>
-    <ul css={tw`flex w-full flex-col`}>
+  <nav css={tw`min-w-fit`}>
+    <ul css={tw`flex w-full flex-col `}>
       {items.map((index) => (
         <li key={index.id}>
-          <TabItem title={index.title} href={index.href} />
+          <TabItem label={index.label} Icon={index.Icon} href={index.href} />
         </li>
       ))}
     </ul>

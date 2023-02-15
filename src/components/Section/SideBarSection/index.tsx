@@ -11,7 +11,7 @@ export const SideBarSection: FC = () => {
     <section
       css={tw`sticky grid h-screen max-w-max grid-rows-[auto_1fr_auto] shadow-md`}
     >
-      <div css={tw`h-16 px-2`}>
+      <div css={tw`flex h-16 items-center justify-center px-2`}>
         <h1 css={tw`text-2xl font-medium`}>MockMockTime</h1>
       </div>
       <div css={tw`mt-4`}>
@@ -23,19 +23,19 @@ export const SideBarSection: FC = () => {
           items={[
             {
               id: 1,
-              Icon: <IconAward size={36} />,
+              Icon: <IconAward />,
               href: "/",
               label: "test",
             },
             {
               id: 2,
-              Icon: <IconAward size={36} />,
+              Icon: <IconAward />,
               href: "/",
               label: "test",
             },
             {
               id: 3,
-              Icon: <IconAward size={36} />,
+              Icon: <IconAward />,
               href: "/",
               label: "test",
             },
