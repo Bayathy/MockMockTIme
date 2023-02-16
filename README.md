@@ -1,2 +1,1 @@
-My Next.js template
-a
+個人開発
