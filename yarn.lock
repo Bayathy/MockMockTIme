@@ -2752,9 +2752,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-bayathy@npm:^1.0.33":
-  version: 1.0.33
-  resolution: "eslint-config-bayathy@npm:1.0.33"
+"eslint-config-bayathy@npm:^1.0.34":
+  version: 1.0.34
+  resolution: "eslint-config-bayathy@npm:1.0.34"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^5.48.1
     "@typescript-eslint/parser": ^5.48.1
@@ -2770,7 +2770,7 @@ __metadata:
   peerDependencies:
     eslint: 8.34.0
     prettier: 2.8.4
-  checksum: 34b03de492d7d3acc6f3088f9bee2ad860083de33b099ba291e7dde9eca23599ff190fd875e873dc93e93bc05a8916713cef232cb9887ad477d635f9a7468674
+  checksum: 33521adce2259ab3b1f60dd4e2d61c3672509ee32fe5d3f18c2eacd339416cf8475e6aa0cc42acd18f5b049d1bcc79b71a1b3700410f25a71083ee687ada6607
   languageName: node
   linkType: hard
 
@@ -6309,7 +6309,7 @@ __metadata:
     babel-loader: ^9.1.2
     babel-plugin-macros: ^3.1.0
     eslint: 8.33.0
-    eslint-config-bayathy: ^1.0.33
+    eslint-config-bayathy: ^1.0.34
     eslint-plugin-tailwindcss: ^3.8.3
     husky: ^8.0.3
     msw: ^1.0.1
